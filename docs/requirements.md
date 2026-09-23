@@ -1,15 +1,13 @@
 # Learnissimo — Requirements
 
-Learnissimo works with multiple types of sources. It starts with PDF documents, where a reference is an exact position within the PDF, and web pages, where a reference is a URL, and is meant to extend to other source types over time.
-
-A test entry is grounded in a single fact and can take common shapes: single choice, multiple choice, ordering, and other equivalent shapes. Test entries are organized into ordered sections, and sections can be organized hierarchically, mirroring the chapters or topics found in the sources. A section is not tied to one source — it can combine entries drawn from several sources, so a topic can be covered using facts pulled from wherever they come from.
-
-Creating and modifying tests works in three modes: fully automated, semi-automated through natural-language requests to change something, and manual, where anything can be adjusted directly.
-
-Every test entry links back to its exact source location, so the learner can jump back and reread it at any point.
-
-Taking a test isn't one fixed thing — a learner can take a quick refresher or a full, thorough pass over a section, and the size and makeup of the test follows from which mode they pick. The entries used and their order shouldn't be identical from one attempt to the next (exact mechanics TBD).
-
-Learnissimo keeps a detailed history of every attempt — which entries were shown, what was answered, whether it was correct — and uses that history to tell the learner, for any topic or section, how well they know it, how confident that assessment is (based on how many times it's actually been tested), and how it has changed over time — improving or slipping.
-
-The system is used through a browser, works well on mobile with an eye toward taking tests in short on-the-go moments, and sits behind third-party login (Google, Facebook, or similar) rather than its own account system.
+- Learnissimo works with multiple types of sources, starting with PDF documents (referenced by an exact position within the PDF) and web pages (referenced by a URL), and extending to other source types over time.
+- A quiz item is grounded in a single fact and takes the form of a task such as a single-choice question, a multiple-choice question, an ordering task, or similar.
+- A quiz item can optionally carry a brief text statement of the fact it is grounded in, separate from the task itself.
+- Quiz items are organized into ordered sections, and sections can be organized hierarchically, mirroring the chapters or topics found in the sources.
+- A section can combine quiz items drawn from several sources, so a topic can be covered using facts pulled from wherever they come from.
+- A user can manually edit quiz items and the section structure in a convenient way. There is also some way to bootstrap quiz items automatically from a source, including adding to or merging with an existing knowledge base rather than only starting fresh. The exact set of modes for creating and modifying quiz items, including anything in between manual and automatic, is to be worked out during implementation.
+- A quiz item can optionally link back to an exact source location, so the user can jump back and reread it at any point; some quiz items stand on their own without a source reference.
+- A user can take a quick refresher or a full, thorough quiz over a section; the size and makeup of the quiz follows from which mode they pick. The quiz items used and their order vary from one attempt to the next (exact mechanics TBD).
+- Learnissimo keeps a detailed history of every attempt — which quiz items were shown, what was answered, and whether it was correct.
+- Using that history, Learnissimo shows the user, for any section, how well they know it, a confidence level based on how many times it's been quizzed, and how that has changed over time.
+- The system runs in a browser, works well on mobile with an eye toward taking quizzes in short, on-the-go moments, and uses third-party login (Google, Facebook, or similar).
